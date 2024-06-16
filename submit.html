@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Comments</title>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content="width-device-width, initial-scale-1.0">
+        <meta name = "description" content="comments and concerns">
+        <meta name = "author" content="Matt Richardson">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <img height="100 px;" width="100 px;" src="star.png" alt="Star">
+                <button class="hbutton" onclick="window.location.href='homepage.html'">Home</button>
+                <button class="hbutton" onclick="window.location.href='movies.html'">Movies</button>     
+                <button class="hbutton" onclick="window.location.href='registration.html'">Register</button>
+            </nav>
+        </header>
+        <main>
+            <div class="submission">
+                <h1>Feed Back</h1>
+                <p>Here you can provide comments, ratings, or suggestions about the entertainment.</p>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="Name" placeholder="Full name" required aria-required="true">
+                    <br>
+                    <label for="Comments">Comments:</label>
+                    <br>
+                    <textarea name="Comments" id="Comments" rows="10" cols="100" placeholder="Comments, Ratinings, Suggestions..."></textarea>
+                    <input class="hbutton" type="button" value="submit" onclick="pr()">
+                </form>
+            </div>
+            <div id="result" class="submission" style="display: none;">
+                <h2>Submitted Comments</h2>
+                <p id="resultName"></p>
+                <p id="resultComments"></p>
+            </div>
+            <script>
+                function pr() {
+                    // Get the form data
+                    const name = document.getElementById('name').value;
+                    const Comments = document.getElementById('Comments').value;
+        
+                    // Display the form data
+                    document.getElementById('resultName').innerText = `Name: ${name}`;
+                    document.getElementById('resultComments').innerText = `Comments: ${Comments}`;
+                    document.getElementById('result').style.display = 'block';
+                }
+            </script>
+                    <section>
+                        <H2>Navigation</H2>
+                        <ul>
+                            <p>please select a link</p>
+                            <li><p>Home: <a href="Homepage.html">click here</a>.</p></li>
+                            <li><p>Movies: <a href="movies.html">click here</a>.</p></li>
+                            <li><p>registration: <a href="registration.html">click here</a>.</p></li>
+                        </ul>
+                    </section>
+        </main>
+        <footer>
+            <p class="submission">Thank you for your Input</p>
+        </footer>
+    </body>
+</html>   

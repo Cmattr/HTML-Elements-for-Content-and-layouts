@@ -1,0 +1,114 @@
+header
+{
+    color: white;
+    background: #000;
+    text-align: left;
+    height: 170px;
+    width: 2000px;
+    font-size: medium;
+    font-style: bold;
+
+}   
+h1
+{
+    color: white;
+    text-align: center;
+}
+body
+{
+    background:content-box radial-gradient(grey, black);
+    background-size: 2000px;
+    font-size: large;
+}
+
+form
+{
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: lightgray;
+
+}
+
+.hbutton
+{
+    margin: 20px;
+    padding: 15px;
+    border: 10px ridge silver;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: large;
+    font-style: italic;
+    font-family: fantasy;
+
+}
+.hbutton:hover
+{
+    margin: 30px;
+    padding: 20px;
+    border: 10px ridge #a98c38;
+    background-color: rgb(0, 0, 0);
+    color: #a98c38;
+    transition: 0.3S;
+}
+.Movie
+{
+    margin: 30px;
+    padding: 20px;
+    border: 10px ridge #a98c38;
+    background-color: rgb(0, 0, 0);
+    color: #a98c38;
+    transition: 1.0S;
+    width: 500px;
+}
+.submission
+{
+    color: #a98c38;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+textarea
+{
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 4px ridge #a98c38;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #000;
+    color: white;
+}
+h2
+{
+    color: #a98c38;
+    font-style: italic;
+}
+
+p
+{
+    color: #a98c38;
+}
+
+ul li 
+{
+color: #a98c38;
+text-decoration: none;
+}
+
+.table
+{
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 4px ridge #a98c38;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #000;
+    color: #a98c38; 
+    text-align: center;
+}

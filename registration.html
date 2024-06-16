@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Entertainment</title>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content="width=device=width, initial-scale-1.0">
+        <meta name = "description" content="All your entertainment needs.">
+        <meta name = "author" content="Matt Richardson">
+        <html lang="en"></html>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+
+
+    <body>
+        <header>
+            <img height="100 px;" width="100 px;" src="star.png" alt="Star">
+                <button class="hbutton" onclick="window.location.href='homepage.html'">Home</button>
+                <button class="hbutton" onclick="window.location.href='movies.html'">Movies</button>    
+                <button class="hbutton" onclick="window.location.href='submit.html'">comments</button>
+
+            </nav>
+        </header>
+        <h1>Register Account</h1>
+            <div>
+                <form action="/submit" method="post">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                    <br>
+                    <label for="password">password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    <br>
+                    <label>Gender</label>
+                    <input type="radio" id="male" name="Gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="Gender" value="female">
+                    <label for="female">Female</label>
+                
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments"></textarea>
+                    <br>
+                    <label for="subscribe">Subscribe to newsletter:</label>
+                    <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+                
+                    <button type="reset">Reset</button>
+                    <button type="submit">Submit</button>
+                        
+                </form>
+            </div>
+            <section>
+                <H2>Navigation</H2>
+                <ul>
+                    <p>please select a link</p>
+                    <li><p>Home: <a href="Homepage.html">click here</a>.</p></li>
+                    <li><p>Movies: <a href="movies.html">click here</a>.</p></li>
+                    <li><p>Comments: <a href="submit.html">click here</a>.</p></li>
+                </ul>
+            </section>
+            <footer>
+                <p class="submission">Thank you for your Input</p>
+            </footer>
+    </body>
+</html>
